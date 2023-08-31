@@ -16,6 +16,6 @@ jobs:
           password: ${{ secrets.DOCKER_TOKEN }}
       - name: Build and Push Docker Image
         run: |
-          docker build -t nodejs:latest ./DockerFileFloder/
+          docker build -t nodejs:latest ./DockerFileFolder/
           docker tag nodejs:latest bhanuprakashnrb/nodejssimple:latest
           docker push bhanuprakashnrb/nodejssimple:latest
